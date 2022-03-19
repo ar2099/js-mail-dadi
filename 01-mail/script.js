@@ -2,7 +2,31 @@ let email = ["bobo@mail.com", "gesu@mail.com", "silvia@mail.com"];
 
 let domanda = prompt("inserisci la tua email");
 
+
+let rispostaRicevuta = false;
+
+for (y = 0; y < email.length; y++) {
+
+    if( email[y] == "domanda") {
+        rispostaRicevuta = true;
+    }
+
+    else {
+        rispostaRicevuta = false;
+    }
+}
+
+if (rispostaRicevuta == true) {
+    document.getElementById("stampa").innerHTML = `<p>La tua email è presente</p>`;
+}
+
+else  {
+    document.getElementById("stampa").innerHTML = `<p>La tua email non è presente</p>`;
+}
+
 console.log(domanda)
+console.log(rispostaRicevuta)
+console.log(y)
 
 // console.log(email[0])
 
@@ -50,22 +74,3 @@ console.log(domanda)
 // } tentativo 2 non funziona
 
 // guardando dalle soluzioni
-
-
-
-let rispostaRicevuta = "false";
-
-for (i = 0; i < email.length; i++) {
-    if(email[i] = domanda) {
-        rispostaRicevuta = "true";
-    }
-}
-
-if (rispostaRicevuta == "true") {
-    document.getElementById("stampa").innerHTML = `<p>La tua email è presente</p>`
-}
-
-else (rispostaRicevuta == "false") {
-    document.getElementById("stampa").innerHTML = `<p>La tua email non è presente</p>`
-}
-
