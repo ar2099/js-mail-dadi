@@ -51,19 +51,21 @@ console.log(domanda)
 
 // guardando dalle soluzioni
 
-let rispostaRicevuta = false;
+
+
+let rispostaRicevuta = "false";
 
 for (i = 0; i < email.length; i++) {
-    if(email[i = domanda]) {
-        rispostaRicevuta = true;
+    if(email[i] = domanda) {
+        rispostaRicevuta = "true";
     }
 }
 
-if (rispostaRicevuta == true) {
+if (rispostaRicevuta == "true") {
     document.getElementById("stampa").innerHTML = `<p>La tua email è presente</p>`
 }
 
-if (rispostaRicevuta == false) {
+else (rispostaRicevuta == "false") {
     document.getElementById("stampa").innerHTML = `<p>La tua email non è presente</p>`
 }
 
