@@ -27,6 +27,28 @@ console.log(domanda)
     
 // } non funziona, proviamo a cambiarlo
 
+// for (var i = 0; i < email.length; i++) {
+//     if (domanda == email[i]) {
+//         let risultato = "vero";
+//         console.log(risultato)
+
+//     }
+
+//     else {
+//     }
+
+//     if (risultato == "vero") {
+//       let  risposta = "L'email è nella lista"
+//     }
+
+//     else {
+//         let risposta = "L'email non è nella lista"
+//     }
+
+//     console.log(risposta)
+
+// } tentativo 2 non funziona
+
 for (var i = 0; i < email.length; i++) {
     if (domanda == email[i]) {
         let risultato = "vero";
@@ -35,10 +57,16 @@ for (var i = 0; i < email.length; i++) {
     }
 
     else {
-        let risultato = "falso";
-        console.log(risultato)
     }
 
+    if (risultato == "vero") {
+        let risposta = "L'email è nella lista"
+    }
+
+    else {
+        let risposta = "L'email non è nella lista"
+    }
+
+    console.log(risposta)
 
 }
-
