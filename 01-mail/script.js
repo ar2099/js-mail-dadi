@@ -7,7 +7,7 @@ let mails = ["bobo@mail.com", "gesu@mail.com", "silvia@mail.com",];
 
 let tuaEmail = prompt("inserisci la tua email");
 
-let aggiunta = document.getElementById("inserisciEmail");
+
 
 
 let mailTrovata = false;
