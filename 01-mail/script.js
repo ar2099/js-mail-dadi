@@ -1,22 +1,23 @@
-let email = ["bobo@mail.com", "gesu@mail.com", "silvia@mail.com"];
+// dopo svariati tentativi, provo a ricopiare l'esercizio pari pari
+// ora funziona tutto
 
-let domanda = prompt("inserisci la tua email");
+
+let mails = ["bobo@mail.com", "gesu@mail.com", "silvia@mail.com"];
+
+let tuaEmail = prompt("inserisci la tua email");
 
 
-let rispostaRicevuta = false;
+let mailTrovata = false;
 
-for (y = 0; y < email.length; y++) {
+for (y = 0; y < mails.length; y++) {
 
-    if( email[y] == "domanda") {
-        rispostaRicevuta = true;
+    if( mails[y] == tuaEmail) {
+        mailTrovata = true;
     }
 
-    else {
-        rispostaRicevuta = false;
-    }
 }
 
-if (rispostaRicevuta == true) {
+if (mailTrovata == true) {
     document.getElementById("stampa").innerHTML = `<p>La tua email è presente</p>`;
 }
 
@@ -24,9 +25,7 @@ else  {
     document.getElementById("stampa").innerHTML = `<p>La tua email non è presente</p>`;
 }
 
-console.log(domanda)
-console.log(rispostaRicevuta)
-console.log(y)
+
 
 // console.log(email[0])
 
