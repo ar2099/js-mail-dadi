@@ -4,4 +4,24 @@ let domanda = prompt("inserisci la tua email");
 
 console.log(domanda)
 
-for (var i = 0; i < email.length)
+console.log(email[0])
+
+console.log(email[1])
+
+console.log(email[2])
+
+// devo creare un programma che ad ogni ciclo verifichi se il prompt è uguale a una delle email
+
+for (var i = 0; i < email.length; i++) {
+    if (domanda == email[i]) {
+        let risultato = "vero";
+       
+    }
+
+    else {
+        let risultato = "falso";
+    }
+
+    console.log(risultato)
+}
+
