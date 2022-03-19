@@ -49,24 +49,21 @@ console.log(domanda)
 
 // } tentativo 2 non funziona
 
-for (var i = 0; i < email.length; i++) {
-    if (domanda == email[i]) {
-        let risultato = "vero";
-        console.log(risultato)
+// guardando dalle soluzioni
 
+let rispostaRicevuta = false;
+
+for (i = 0; i < email.length; i++) {
+    if(email[i = domanda]) {
+        rispostaRicevuta = true;
     }
-
-    else {
-    }
-
-    if (risultato == "vero") {
-        let risposta = "L'email è nella lista"
-    }
-
-    else {
-        let risposta = "L'email non è nella lista"
-    }
-
-    console.log(risposta)
-
 }
+
+if (rispostaRicevuta == true) {
+    document.getElementById("stampa").innerHTML = `<p>La tua email è presente</p>`
+}
+
+if (rispostaRicevuta == false) {
+    document.getElementById("stampa").innerHTML = `<p>La tua email non è presente</p>`
+}
+
