@@ -1,3 +1,48 @@
+/* RESET E IMPOSTAZIONI GENERALI */
+
+* {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#tutto {
+    width: 80%;
+    margin: 20px auto auto auto;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.area-gioco {
+    float: left;
+}
+
+.area-risultati {
+    float: right;
+    width: 220px;
+    border: 4px solid black;
+}
+
+.rettangolo-1 {
+    float: left;
+    width: 50%;
+    border-right: 2px solid black;
+    
+}
+
+.rettangolo-2 {
+    float: left;
+    width: 50%;
+    border-left: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
 #bottone {
     display: block;
     height: 100px;
@@ -14,3 +59,4 @@
     height: 100%;
     width: 100%;
 }
+

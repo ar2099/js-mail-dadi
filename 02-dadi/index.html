@@ -10,9 +10,20 @@
    
 </head>
 <body>
-    
-    <div id="bottone"><div class="contenitore"><span>Inizia partita</span></div></div>
-    <div id="risultatoDadi"></div>
+    <div id="tutto" class="clearfix">
+        <div class="area-gioco">
+            <h3>Tira due dadi: vinci se il tuo numero è più alto di quello del computer</h3>
+            <div id="bottone"><div class="contenitore"><span>Tira i due dadi</span></div></div>
+            <p id="numero-giocatore"></p>
+            <p id="numero-computer"></p>
+            <div id="risultatoDadi"></div>
+        </div>
+        <div class="area-risultati clearfix">
+            <div class="rettangolo-1" id="vg"><p>Vittoria giocatore</p></div>
+            <div class="rettangolo-2" id="vc"><p>Vittoria computer</p></div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 
 </body>
